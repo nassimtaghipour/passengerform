@@ -1,68 +1,40 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+ implement a 2-step single page application, which contains some custom forms. Fields in this forms will consist of required passenger data.
 
-### `npm start`
+In the application there will be two different steps, one for adding primary passengers data and other for adding secondary passengers (Family) data. Primary passenger is the leading one, we need a lot of data about him. Secondary passenger requires less, but should be able to include several passengers data at once.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## The 1st step gathers DATA ABOUT PRIMARY PASSENGER
 
-### `npm test`
+Full Name
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Age
 
-### `npm run build`
+Email
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Address (Country select  + Street + Index/Zip)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Phone Number
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## The 2nd step will contain DATA ABOUT SECONDARY PASSENGER(S)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Full Name
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Age
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Add one more passenger button / Remove passenger (only if there is several forms)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+# Requirements:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Steps should contain form/step validation (not supposed to submit empty forms or invalid email etc.)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Every step should have a navigation capability, which submits a form on every step (ability to move backwards and forwards f.e “back” / “next”)
 
-### Code Splitting
+3. The second step should have the ability to add and remove secondary passengers dynamically. Can be submitted with one passenger as with several passengers, all fields should be simply validated though (f.e. age should be a number).
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+4. After submitting the second step notify the user with success message.
 
-### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
